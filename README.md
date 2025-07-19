@@ -21,7 +21,7 @@ conda create -p <env_name> python=3.10 -y
 ```
 
 ```
-conda activate <path_of_the_env>
+conda activate <path_of_the_env>\env
 ```
 
 ```
