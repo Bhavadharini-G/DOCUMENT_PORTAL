@@ -48,7 +48,7 @@ git push
 ### for cloning my repo use this command
 
 ```
-git clone https://github.com/sunnysavita10/document_portal.git
+git clone https://github.com/Bhavadharini-G/DOCUMENT_PORTAL.git
 ```
 
 ### minimum requirement for this project
