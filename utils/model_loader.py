@@ -19,7 +19,11 @@ class ModelLoader:
     
     def __init__(self):
         
-        load_dotenv()
+        if os.getenv("ENV", "local").lower() != "production":
+            load_dotenv()
+            log.info("Running in LOCAL mode: .env file loaded")
+        else:
+            log.info("Running in PRODUCTION mode: .env not loaded")
         self._validate_env()
         self.config=load_config()
         log.info("Configuration loaded successfully", config_keys=list(self.config.keys()))
@@ -36,6 +40,8 @@ class ModelLoader:
             log.error("Missing environment variables", missing_vars=missing)
             raise DocumentPortalException("Missing environment variables", sys)
         log.info("Environment variables validated", available_keys=[k for k in self.api_keys if self.api_keys[k]])
+        log.info("Environment variables validated", available_keys={k: v[:30] + "..." if v else None for k, v in self.api_keys.items()})
+
         
     def load_embeddings(self):
         """
