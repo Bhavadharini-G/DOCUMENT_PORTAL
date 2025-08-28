@@ -69,7 +69,7 @@ git clone https://github.com/Bhavadharini-G/DOCUMENT_PORTAL.git
 ## Demo Videos  
 
 ### Portal Features
-![Portal Features Video](Videos/Portal_Features.gif)  
+[Portal Features Video](Videos/Portal_Features.mp4)  
 
 ### Sample Analysis
-![Sample Analysis Video](Videos/Sample_Analysis.gif)  
+[Sample Analysis Video](Videos/Sample_Analysis.mp4)  
